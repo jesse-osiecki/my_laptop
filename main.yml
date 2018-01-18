@@ -1,0 +1,7 @@
+---
+- hosts: all
+  roles:
+    - configs
+    - systemd_units
+    - dotfiles
+    - pacman_pkgs

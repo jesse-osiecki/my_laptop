@@ -1,0 +1,11 @@
+---
+- name: Update Pacman
+  pacman:
+    update_cache: yes
+    upgrade: yes
+  become: yes
+- name: Install stuff
+  pacman:
+    name: "{{ package_list }}"
+    state: present
+  become: yes

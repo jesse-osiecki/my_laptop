@@ -1,0 +1,16 @@
+This is my personal Ansible Playbook for provisioning my laptop
+
+I use Manjaro for my laptop, this should run fine on Arch ymmv
+
+Step 1:
+Install OS
+
+Step 2:
+Install Ansible and syncthing
+
+Step 3:
+Sync all of the Folders, the box for Automatic path's
+
+Step 4:
+Run this ansible playbook on itself
+$ ansible-playbook playbooks/main.yml

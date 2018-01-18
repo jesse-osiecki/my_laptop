@@ -1,0 +1,17 @@
+---
+# first ensure our target directory exists
+- name: Ensure target directory exists
+  file:
+    dest: "/etc/systemd/system/"
+    state: directory
+
+- name: systemd files
+  become: true
+  template:
+    src: '{{ item.src }}'
+    dest: /etc/systemd/{{ item.path }}
+    mode: '{{ item.mode }}'
+    owner: "root" 
+  with_filetree: ./
+  when: item.state == 'file'
+

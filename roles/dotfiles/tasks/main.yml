@@ -1,0 +1,9 @@
+---
+- name: setup dotfile symlinks
+  file: 
+    src: '{{ item.root + (item.path | basename) }}'
+    path: '/home/jesse/{{ item.path | basename}}' 
+    state: link 
+    force: true
+  with_filetree: "~/dotfiles/"
+  when: item.path | basename == item.path and item.path | basename != ".stfolder"

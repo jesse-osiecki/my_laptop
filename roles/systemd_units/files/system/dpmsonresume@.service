@@ -1,0 +1,12 @@
+[Unit]
+Description=Set DPMS after resume
+After=suspend.target
+
+[Service]
+User=%i
+Environment=DISPLAY=:0
+ExecStartPre=/usr/bin/sleep 1
+ExecStart=/home/%i/bin/screensaver_enable
+
+[Install]
+WantedBy=suspend.target
