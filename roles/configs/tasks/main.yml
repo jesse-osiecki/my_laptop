@@ -5,10 +5,24 @@
     dest: "~/.config/"
     state: directory
 
+#- name: check for cruft
+#  stat:
+#    path: '/home/jesse/.config/{{ item.path | basename}}' 
+#  with_filetree: "~/.config/"
+#  when: item.path | basename == item.path and item.path | basename != ".stfolder"
+#  register: configs
+#
+#- debug:
+#    msg: "{{ configs }}"
+#
+#- name: remove the old cruft
+#  file: path=/etc/nginx/sites-available state=absent
+#  when: sites_available.stat.isdir is defined and sites_available.stat.isdir
+
 - name: setup config symlinks
   file: 
     src: '{{ item.root + (item.path | basename) }}'
-    path: '/home/jesse/.config/{{ item.path | basename}}' 
+    path: '~/.config/{{ item.path | basename}}' 
     state: link 
     force: true
   with_filetree: "~/configs/"

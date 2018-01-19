@@ -19,12 +19,6 @@ package_list:
   - b43-fwcutter
   - bash
   - bash-completion
-  - bcompare
-  - bcompare-cinnamon
-  - bcompare-kde
-  - bcompare-mate
-  - bcompare-nautilus
-  - bcompare-thunar
   - bind-tools
   - binutils
   - bison
@@ -32,8 +26,6 @@ package_list:
   - bmenu
   - btrfs-progs
   - bzip2
-  - caffeine-ng
-  - chef-dk
   - chromium
   - clipit
   - coreutils
@@ -113,8 +105,6 @@ package_list:
   - jq
   - json-c
   - keepassxc
-  - khal
-  - khard
   - less
   - lib32-flex
   - lib32-mesa-demos
@@ -166,7 +156,6 @@ package_list:
   - nano
   - ncdu
   - neomutt
-  - neovim-gtk
   - net-tools
   - netctl
   - network-manager-applet
@@ -222,7 +211,6 @@ package_list:
   - sed
   - shadow
   - speedtest-cli
-  - spotify
   - sudo
   - syncthing
   - syncthing-inotify
@@ -248,7 +236,6 @@ package_list:
   - ttf-liberation
   - unzip
   - upower
-  - urlview
   - usbutils
   - util-linux
   - vi
@@ -294,3 +281,16 @@ package_list:
   - zd1211-firmware
   - zip
   - zsh
+
+aur_list:
+  - bcompare
+  - bcompare-cinnamon
+  - bcompare-kde
+  - bcompare-mate
+  - bcompare-nautilus
+  - bcompare-thunar
+  - chef-dk
+  - khal
+  - khard
+  - neovim-gtk
+  - urlview

@@ -13,4 +13,4 @@ Sync all of the Folders, the box for Automatic path's
 
 Step 4:
 Run this ansible playbook on itself
-$ ansible-playbook playbooks/main.yml
+$ ansible-playbook playbooks/main.yml --ask-become-pass

@@ -4,8 +4,19 @@
     update_cache: yes
     upgrade: yes
   become: yes
+
+- name: Install AUR packages
+  aur: 
+    name: "{{ item }}" 
+    tool: yaourt
+  become: yes
+  with_flattened:
+      - "{{ aur_list }}"
+
 - name: Install stuff
   pacman:
     name: "{{ package_list }}"
     state: present
   become: yes
+
+
