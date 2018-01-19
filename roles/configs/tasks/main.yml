@@ -7,7 +7,7 @@
 
 - name: check for cruft
   stat:
-    path: '/home/jesse/.config/{{ item.path | basename}}' 
+    path: '~/.config/{{ item.path | basename}}' 
   with_filetree: "~/configs/"
   when: item.path | basename == item.path and item.path | basename != ".stfolder"
   register: configs
