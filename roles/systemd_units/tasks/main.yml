@@ -15,3 +15,22 @@
   with_filetree: ./
   when: item.state == 'file'
 
+- name: turn on the systemd units (System)
+  become: true
+  systemd: 
+    enabled: true
+    name: "{{ item }}"
+  with_items: "{{ system_units }}"
+
+#- name: turn on the systemd units (User)
+#  become: false
+#  systemd: 
+#    enabled: true
+#    name: "{{ item }}"
+#  with_items: "{{ user_units }}"
+#
+- name: vdirsyncer.timer
+  become: false
+  shell: systemctl enable vdirsyncer.timer --user
+  args:
+    creates: ~/.config/systemd/user/timers.target.wants/vdirsyncer.timer

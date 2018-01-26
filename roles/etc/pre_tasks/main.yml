@@ -1,0 +1,6 @@
+---
+- name: Install pre-reqs
+  pacman:
+    name: pacman
+    state: present
+  become: yes

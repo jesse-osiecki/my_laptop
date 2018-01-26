@@ -1,0 +1,11 @@
+---
+system_units:
+    - tlp
+    - powertop
+    - syncthing@jesse
+    - offlineimap@jesse
+    - screenlocksleep@jesse
+    - dpmsonresume@jesse
+    - smartd
+user_units:
+    - vdirsyncer.timer

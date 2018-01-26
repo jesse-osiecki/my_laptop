@@ -9,9 +9,16 @@
   aur: 
     name: "{{ item }}" 
     tool: yaourt
-  become: yes
+  become: false
   with_flattened:
       - "{{ aur_list }}"
+
+- name: remove vte3 for vte3-ng
+  pacman:
+    name: vte3
+    state: absent
+    force: true
+  become: yes
 
 - name: Install stuff
   pacman:

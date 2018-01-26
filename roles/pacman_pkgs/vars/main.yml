@@ -70,6 +70,7 @@ package_list:
   - gettext
   - gimp
   - gksu
+  - glances
   - glibc
   - gnome-alsamixer
   - gnome-keyring
@@ -117,7 +118,6 @@ package_list:
   - licenses
   - lightdm-gtk-greeter-settings
   - linux-firmware
-  - linux415-headers
   - linux49
   - logrotate
   - lsb-release
@@ -196,6 +196,7 @@ package_list:
   - psmisc
   - python-pip
   - python2-neovim
+  - python2-dateutil
   - python2-pip
   - qt5-styleplugins
   - qt5ct
@@ -210,6 +211,7 @@ package_list:
   - screenfetch
   - sed
   - shadow
+  - smartmontools
   - speedtest-cli
   - sudo
   - syncthing
@@ -290,6 +292,7 @@ aur_list:
   - bcompare-nautilus
   - bcompare-thunar
   - chef-dk
+  - vdirsyncer-git
   - khal
   - khard
   - neovim-gtk

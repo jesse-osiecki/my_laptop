@@ -1,0 +1,7 @@
+---
+- name: Install Prereqs
+  pacman:
+    name: python2-jmespath
+    state: present
+  become: yes
+
