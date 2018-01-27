@@ -136,6 +136,7 @@ package_list:
   - manjaro-hotfixes
   - manjaro-i3-settings
   - manjaro-printer
+  - manjaro-pulse
   - manjaro-release
   - manjaro-settings-manager-notifier
   - manjaro-system
@@ -176,6 +177,7 @@ package_list:
   - os-prober
   - otf-fira-mono
   - p7zip
+  - pa-applet
   - pacman
   - palemoon-bin
   - pamac
@@ -195,8 +197,9 @@ package_list:
   - procps-ng
   - psmisc
   - python-pip
-  - python2-neovim
   - python2-dateutil
+  - python2-jmespath
+  - python2-neovim
   - python2-pip
   - qt5-styleplugins
   - qt5ct
@@ -243,12 +246,12 @@ package_list:
   - vi
   - vibrancy-colors
   - viewnior
+  - vim
   - vlc-nightly
   - volumeicon
   - vulkan-intel
   - w3m
   - weechat
-  - wget
   - which
   - wmutils
   - wpa_supplicant
@@ -275,7 +278,6 @@ package_list:
   - xorg-twm
   - xorg-xhost
   - xorg-xinit
-  - xorg-xinput
   - xorg-xkill
   - xorg-xprop
   - xterm
@@ -292,8 +294,8 @@ aur_list:
   - bcompare-nautilus
   - bcompare-thunar
   - chef-dk
-  - vdirsyncer-git
   - khal
   - khard
   - neovim-gtk
   - urlview
+  - vdirsyncer-git

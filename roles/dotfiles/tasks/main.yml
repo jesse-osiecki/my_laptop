@@ -21,10 +21,14 @@
     force: true
   with_filetree: "~/dotfiles/"
   when: item.path | basename == item.path and item.path | basename != ".stfolder"
+- name: offlineimap
+  shell: offlineimap -o
 
 - name: notmuch
   shell: notmuch new
+
 - name: vdirsyncer discover
   shell: yes | vdirsyncer discover
+
 - name: vdirsyncer sync
   shell: vdirsyncer sync
