@@ -18,6 +18,7 @@
 - name: turn on the systemd units (System)
   become: true
   systemd: 
+    daemon_reload: yes
     enabled: true
     name: "{{ item }}"
   with_items: "{{ system_units }}"
