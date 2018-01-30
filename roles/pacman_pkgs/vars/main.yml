@@ -101,6 +101,7 @@ package_list:
   - iputils
   - ipw2100-fw
   - ipw2200-fw
+  - ipython
   - isousb
   - jfsutils
   - jq
@@ -119,6 +120,7 @@ package_list:
   - lightdm-gtk-greeter-settings
   - linux-firmware
   - linux49
+  - linux49-tp_smapi
   - logrotate
   - lsb-release
   - lvm2
@@ -167,6 +169,7 @@ package_list:
   - networkmanager-pptp
   - networkmanager-vpnc
   - nfs-utils
+  - nodejs
   - nss-mdns
   - ntfs-3g
   - ntp
@@ -179,7 +182,6 @@ package_list:
   - p7zip
   - pa-applet
   - pacman
-  - palemoon-bin
   - pamac
   - patch
   - pavucontrol
@@ -196,11 +198,14 @@ package_list:
   - powertop
   - procps-ng
   - psmisc
+  - python-neovim
   - python-pip
+  - python-pyinotify
   - python2-dateutil
   - python2-jmespath
   - python2-neovim
   - python2-pip
+  - python2-pyinotify
   - qt5-styleplugins
   - qt5ct
   - qutebrowser
@@ -229,6 +234,7 @@ package_list:
   - the_silver_searcher
   - tlp
   - tmux
+  - tpacpi-bat
   - transmission-gtk
   - tree
   - ttf-bitstream-vera
@@ -238,6 +244,7 @@ package_list:
   - ttf-inconsolata
   - ttf-indic-otf
   - ttf-liberation
+  - typescript
   - unzip
   - upower
   - usbutils
@@ -254,6 +261,7 @@ package_list:
   - which
   - wmutils
   - wpa_supplicant
+  - x86_energy_perf_policy
   - xarchiver
   - xautolock
   - xclip
