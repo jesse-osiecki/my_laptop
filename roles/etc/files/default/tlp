@@ -64,7 +64,7 @@ CPU_HWP_ON_BAT=balance_power
 CPU_MIN_PERF_ON_AC=0
 CPU_MAX_PERF_ON_AC=100
 CPU_MIN_PERF_ON_BAT=0
-CPU_MAX_PERF_ON_BAT=50
+CPU_MAX_PERF_ON_BAT={{ CPU_MAX_PERF_ON_BAT }}
 
 # Set the CPU "turbo boost" feature: 0=disable, 1=allow
 # Requires an Intel Core i processor.
@@ -103,7 +103,7 @@ DISK_DEVICES="sda"
 # Separate values for multiple disks with spaces. Use the special value 'keep'
 # to keep the hardware default for the particular disk.
 DISK_APM_LEVEL_ON_AC="254 254"
-DISK_APM_LEVEL_ON_BAT="128 128"
+DISK_APM_LEVEL_ON_BAT={{ DISK_APM_LEVEL_ON_BAT }}
 
 # Hard disk spin down timeout:
 #   0:        spin down disabled
@@ -123,7 +123,7 @@ DISK_APM_LEVEL_ON_BAT="128 128"
 # SATA aggressive link power management (ALPM):
 #   min_power, medium_power, max_performance
 SATA_LINKPWR_ON_AC=max_performance
-SATA_LINKPWR_ON_BAT=min_power
+SATA_LINKPWR_ON_BAT={{ SATA_LINKPWR_ON_BAT }}
 
 # Exclude SATA host devices from link power management.
 # Separate multiple hosts with spaces.
