@@ -116,11 +116,13 @@ package_list:
   - libreoffice-fresh
   - libtool
   - libva-mesa-driver
+  - libvirt
   - licenses
   - lightdm-gtk-greeter-settings
   - linux-firmware
   - linux49
   - linux49-tp_smapi
+  - linux49-virtualbox-host-modules
   - logrotate
   - lsb-release
   - lvm2
@@ -199,11 +201,16 @@ package_list:
   - procps-ng
   - psmisc
   - python-neovim
+  - python-netaddr
   - python-pip
+  - python-pyflakes
   - python-pyinotify
+  - python-virtualenv
+  - python-virtualenvwrapper
   - python2-dateutil
   - python2-jmespath
   - python2-neovim
+  - python2-netaddr
   - python2-pip
   - python2-pyinotify
   - qt5-styleplugins
@@ -212,6 +219,7 @@ package_list:
   - ranger
   - redshift
   - reiserfsprogs
+  - riot-desktop
   - rsync
   - ruby
   - s-nail
@@ -249,10 +257,12 @@ package_list:
   - upower
   - usbutils
   - util-linux
+  - vagrant
   - vi
   - vibrancy-colors
   - viewnior
   - vim
+  - virtualbox
   - vlc-nightly
   - volumeicon
   - vulkan-intel
@@ -300,9 +310,11 @@ aur_list:
   - bcompare-mate
   - bcompare-nautilus
   - bcompare-thunar
+  - burpsuite
   - chef-dk
   - khal
   - khard
   - neovim-gtk
   - urlview
   - vdirsyncer-git
+  - yamllint

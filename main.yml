@@ -6,3 +6,4 @@
     - dotfiles
     - systemd_units
     - etc
+    - usr-local-bin
