@@ -1,6 +1,6 @@
 [Unit]
 Description=Lock X session at suspend
-Before=sleep.target
+Before=suspend.target
  
 [Service]
 User=%i
