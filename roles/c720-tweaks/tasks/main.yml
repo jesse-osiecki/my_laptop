@@ -17,6 +17,14 @@
     mode: 0644
     owner: "root" 
 
+- name: alsa.conf
+  become: true
+  template:
+    src: alsa.conf
+    dest: /etc/modprobe.d/alsa.conf
+    mode: 0644
+    owner: root
+
 - name: chrome os sound suspend
   become: true
   template:
