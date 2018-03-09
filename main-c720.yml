@@ -7,3 +7,4 @@
     - SATA_LINKPWR_ON_BAT: max_performance
   
 - import_playbook: ./main.yml
+- import_playbook: ./c720-tweaks.yml

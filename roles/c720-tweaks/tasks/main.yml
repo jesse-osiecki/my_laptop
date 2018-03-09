@@ -1,0 +1,49 @@
+
+# first ensure our target directory exists
+- name: Ensure target directory exists
+  become: true
+  file:
+    dest: "{{ item }}"
+    state: directory
+  with_items:
+    - "/etc/rc.d"
+    - "/usr/lib/systemd/system-sleep/"
+
+- name: rc.local
+  become: true
+  template:
+    src: 'rc.local'
+    dest: /etc/rc.d/rc.local
+    mode: 0644
+    owner: "root" 
+
+- name: chrome os sound suspend
+  become: true
+  template:
+    src: 'cros-sound-suspend.sh'
+    dest: /usr/lib/systemd/system-sleep/cros-sound-suspend.sh
+    mode: 0755
+    owner: "root" 
+
+- name: suspend fix service
+  become: true
+  template:
+    src: 'suspend-fix.service'
+    dest: /etc/systemd/system/suspend-fix.service
+    mode: 0644
+    owner: "root" 
+
+- name: suspend fix
+  become: true
+  template:
+    src: 'suspend-device-fix.sh'
+    dest: /usr/local/sbin/suspend-device-fix.sh
+    mode: 0755
+    owner: "root" 
+
+- name: enable and start systemd service
+  become: true
+  systemd: 
+    daemon_reload: yes
+    enabled: true
+    name: suspend-fix.service
