@@ -33,25 +33,3 @@
     mode: 0755
     owner: "root" 
 
-- name: suspend fix service
-  become: true
-  template:
-    src: 'suspend-fix.service'
-    dest: /etc/systemd/system/suspend-fix.service
-    mode: 0644
-    owner: "root" 
-
-- name: suspend fix
-  become: true
-  template:
-    src: 'suspend-device-fix.sh'
-    dest: /usr/local/sbin/suspend-device-fix.sh
-    mode: 0755
-    owner: "root" 
-
-- name: enable and start systemd service
-  become: true
-  systemd: 
-    daemon_reload: yes
-    enabled: true
-    name: suspend-fix.service
