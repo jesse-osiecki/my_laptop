@@ -158,6 +158,7 @@ package_list:
   - mousepad
   - msmtp
   - msmtp-mta
+  - mpv
   - nano
   - ncdu
   - neomutt
@@ -304,12 +305,6 @@ package_list:
   - zsh
 
 aur_list:
-  - bcompare
-  - bcompare-cinnamon
-  - bcompare-kde
-  - bcompare-mate
-  - bcompare-nautilus
-  - bcompare-thunar
   - burpsuite
   - chef-dk
   - khal
