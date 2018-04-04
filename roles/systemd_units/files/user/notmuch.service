@@ -1,0 +1,6 @@
+[Unit]
+Description=Index Mail
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notmuch new

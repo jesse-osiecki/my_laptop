@@ -35,3 +35,9 @@
   shell: systemctl enable vdirsyncer.timer --user
   args:
     creates: ~/.config/systemd/user/timers.target.wants/vdirsyncer.timer
+
+- name: notmuch.timer
+  become: false
+  shell: systemctl enable notmuch.timer --user
+  args:
+    creates: ~/.config/systemd/user/timers.target.wants/notmuch.timer

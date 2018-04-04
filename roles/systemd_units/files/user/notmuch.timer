@@ -1,0 +1,10 @@
+[Unit]
+Description=Index Mail every hour
+
+[Timer]
+OnBootSec= 5min
+OnUnitActiveSec= 60min
+Unit=notmuch.service
+
+[Install]
+WantedBy=timers.target
