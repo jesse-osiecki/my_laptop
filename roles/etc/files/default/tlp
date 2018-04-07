@@ -103,7 +103,7 @@ DISK_DEVICES="sda"
 # Separate values for multiple disks with spaces. Use the special value 'keep'
 # to keep the hardware default for the particular disk.
 DISK_APM_LEVEL_ON_AC="254 254"
-DISK_APM_LEVEL_ON_BAT={{ DISK_APM_LEVEL_ON_BAT }}
+DISK_APM_LEVEL_ON_BAT="{{ DISK_APM_LEVEL_ON_BAT }}"
 
 # Hard disk spin down timeout:
 #   0:        spin down disabled

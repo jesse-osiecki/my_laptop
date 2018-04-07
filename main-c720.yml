@@ -4,7 +4,13 @@
   vars:
     - CPU_MAX_PERF_ON_BAT: 100
     - DISK_APM_LEVEL_ON_BAT: "254 254"
-    - SATA_LINKPWR_ON_BAT: max_performance
-  
-- import_playbook: ./main.yml
-- import_playbook: ./c720-tweaks.yml
+    - SATA_LINKPWR_ON_BAT: max_performance 
+  roles:
+    - pacman_pkgs
+    - configs
+    - dotfiles
+    - systemd_units
+    - etc
+    - usr-local-bin
+    - lid-fix
+    - c720-tweaks
