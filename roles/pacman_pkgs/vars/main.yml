@@ -12,6 +12,7 @@ package_list:
   - arandr
   - artwork-i3
   - autoconf
+  - autofs
   - automake
   - autossh
   - avahi
