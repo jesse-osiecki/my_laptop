@@ -8,6 +8,8 @@ package_list:
   - alsa-plugins
   - alsa-tools
   - alsa-utils
+  - android-tools
+  - android-udev
   - ansible
   - arandr
   - artwork-i3
@@ -24,11 +26,15 @@ package_list:
   - binutils
   - bison
   - blueman
+  - bluez-tools
+  - bluez-utils
   - bmenu
   - btrfs-progs
   - bzip2
+  - calibre
   - chromium
   - clipit
+  - cmus
   - coreutils
   - cpupower
   - crda
@@ -63,6 +69,7 @@ package_list:
   - flac
   - flashplugin
   - flex
+  - freerdp
   - gawk
   - gcc
   - gcc-libs
@@ -75,6 +82,7 @@ package_list:
   - glibc
   - gnome-alsamixer
   - gnome-keyring
+  - go
   - gparted
   - grep
   - grub
@@ -94,6 +102,7 @@ package_list:
   - haveged
   - hexchat
   - htop
+  - i2c-tools
   - inetutils
   - intel-ucode
   - inxi
@@ -108,6 +117,8 @@ package_list:
   - jq
   - json-c
   - keepassxc
+  - khal
+  - khard
   - less
   - lib32-flex
   - lib32-mesa-demos
@@ -115,12 +126,18 @@ package_list:
   - libdvdcss
   - libgpod
   - libreoffice-fresh
+  - libspf2
   - libtool
   - libva-mesa-driver
   - libvirt
+  - libvncserver
   - licenses
   - lightdm-gtk-greeter-settings
   - linux-firmware
+  - linux416
+  - linux416-acpi_call
+  - linux416-virtualbox-host-modules
+  - linux416-zfs
   - linux49
   - linux49-tp_smapi
   - linux49-virtualbox-host-modules
@@ -157,6 +174,8 @@ package_list:
   - modemmanager
   - morc_menu
   - mousepad
+  - mp3info
+  - mpv
   - msmtp
   - msmtp-mta
   - mpv
@@ -173,6 +192,8 @@ package_list:
   - networkmanager-pptp
   - networkmanager-vpnc
   - nfs-utils
+  - ninja
+  - nmap
   - nodejs
   - nss-mdns
   - ntfs-3g
@@ -202,6 +223,7 @@ package_list:
   - powertop
   - procps-ng
   - psmisc
+  - pulseaudio-bluetooth
   - python-neovim
   - python-netaddr
   - python-pip
@@ -215,24 +237,30 @@ package_list:
   - python2-netaddr
   - python2-pip
   - python2-pyinotify
+  - python2-websocket-client
   - qt5-styleplugins
   - qt5ct
   - qutebrowser
   - ranger
   - redshift
   - reiserfsprogs
+  - remmina
   - riot-desktop
+  - rpmextract
   - rsync
   - ruby
   - s-nail
+  - samba
   - sbxkb
   - screenfetch
+  - seahorse
   - sed
   - shadow
   - smartmontools
   - speedtest-cli
   - sudo
   - syncthing
+  - syncthing-gtk
   - sysfsutils
   - syslog-ng
   - systemd-sysvcompat
@@ -246,6 +274,7 @@ package_list:
   - tmux
   - tpacpi-bat
   - transmission-gtk
+  - transmission-remote-gtk
   - tree
   - ttf-bitstream-vera
   - ttf-dejavu
@@ -264,6 +293,8 @@ package_list:
   - vibrancy-colors
   - viewnior
   - vim
+  - virt-install
+  - virt-manager
   - virtualbox
   - vlc-nightly
   - volumeicon
@@ -271,6 +302,8 @@ package_list:
   - w3m
   - weechat
   - which
+  - wireshark-cli
+  - wireshark-gtk
   - wmutils
   - wpa_supplicant
   - x86_energy_perf_policy
@@ -301,6 +334,7 @@ package_list:
   - xorg-xprop
   - xterm
   - yaourt
+  - yarn
   - zd1211-firmware
   - zip
   - zsh
@@ -308,9 +342,13 @@ package_list:
 aur_list:
   - burpsuite
   - chef-dk
+  - leiningen
   - khal
   - khard
   - neovim-gtk
+  - postman-bin
+  - thinkfan-git
+  - ttf-crosextra
   - urlview
   - vdirsyncer-git
   - yamllint
