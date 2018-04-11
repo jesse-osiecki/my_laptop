@@ -308,6 +308,7 @@ package_list:
   - wpa_supplicant
   - x86_energy_perf_policy
   - xarchiver
+  - xorg-xbacklight
   - xclip
   - xcursor-chameleon-pearl
   - xcursor-maia
