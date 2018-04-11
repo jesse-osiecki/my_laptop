@@ -308,7 +308,6 @@ package_list:
   - wpa_supplicant
   - x86_energy_perf_policy
   - xarchiver
-  - xautolock
   - xclip
   - xcursor-chameleon-pearl
   - xcursor-maia
@@ -326,6 +325,7 @@ package_list:
   - xfburn
   - xfce4-power-manager
   - xfsprogs
+  - xss-lock
   - xorg-server
   - xorg-twm
   - xorg-xhost
