@@ -1,4 +1,4 @@
-This is my personal Ansible Playbook for provisioning my laptop
+This is my personal Ansible Playbook for provisioning my laptop(s)
 
 I use Manjaro for my laptop, this should run fine on Arch ymmv
 
@@ -6,11 +6,15 @@ Step 1:
 Install OS
 
 Step 2:
-Install Ansible and syncthing
+Install Ansible and sync your config folders
 
 Step 3:
 Sync all of the Folders, the box for Automatic path's
 
 Step 4:
 Run this ansible playbook on itself
-$ ansible-playbook playbooks/main.yml --ask-become-pass
+$ ansible-playbook main.yml --ask-become-pass
+
+I would like to express that this is not necessarily the best way to use
+Ansible and relies on some hacky things to make system config seperate from my
+personal config. I like how it works
