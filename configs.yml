@@ -1,5 +1,0 @@
----
-- hosts: all
-  roles:
-    - configs
-  become: false
