@@ -41,3 +41,9 @@
   shell: systemctl enable notmuch.timer --user
   args:
     creates: ~/.config/systemd/user/timers.target.wants/notmuch.timer
+
+- name: ssh-agent.service
+  become: false
+  shell: systemctl enable ssh-agent.service --user
+  args:
+    creates: ~/.config/systemd/user/default.target.wants/ssh-agent.service

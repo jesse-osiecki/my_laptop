@@ -1,0 +1,16 @@
+---
+- name: thinkfan conf
+  become: true
+  template:
+    src: 'thinkfan.conf'
+    dest: /etc/thinkfan.conf
+
+- name: turn on the systemd units (ThinkFan)
+  become: true
+  systemd: 
+    daemon_reload: yes
+    enabled: true
+    name: "{{ item }}"
+  with_items:
+    - thinkfan
+    - thinkfan-wakeup

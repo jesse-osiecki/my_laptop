@@ -4,8 +4,8 @@ system_units:
     - powertop
     - syncthing@jesse
     - offlineimap@jesse
-    - screenlocksleep@jesse
-    - dpmsonresume@jesse
+    #- screenlocksleep@jesse
+    #- dpmsonresume@jesse
     - smartd
 user_units:
     - vdirsyncer.timer
