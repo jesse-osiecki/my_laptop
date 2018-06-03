@@ -1,4 +1,10 @@
 ---
+- name: Install thinkfan
+  pacman:
+    name: thinkfan-git
+    state: present
+  become: yes
+
 - name: thinkfan conf
   become: true
   template:

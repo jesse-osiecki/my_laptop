@@ -1,6 +1,0 @@
----
-- hosts: all
-  roles:
-    - ../systemd_units
-
-  become: true

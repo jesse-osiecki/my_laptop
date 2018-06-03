@@ -10,7 +10,14 @@
   become: true
   ufw:
     state: enabled
+    policy: allow
+
+- name: enable rules
+  become: true
+  ufw:
     name: syncthing
+    rule: allow
+
 
 - name: enable systemd service
   become: true

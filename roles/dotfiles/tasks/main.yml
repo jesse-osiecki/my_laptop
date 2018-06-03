@@ -19,6 +19,13 @@
   with_items: "{{ dotfiles | json_query('results[*].stat') }}"
   when: (item.isdir is defined and item.isdir) or (item.isreg is defined and item.isreg)
 
+- name: ssh symlink
+  file: 
+    src: '~/ssh'
+    path: '~/.ssh' 
+    state: link 
+    force: true
+
 - name: setup dotfile symlinks
   file: 
     src: '{{ item.root + (item.path | basename) }}'

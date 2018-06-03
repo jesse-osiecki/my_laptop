@@ -139,7 +139,6 @@ package_list:
   - linux416-virtualbox-host-modules
   - linux416-zfs
   - linux49
-  - linux49-tp_smapi
   - linux49-virtualbox-host-modules
   - logrotate
   - lsb-release
@@ -289,6 +288,7 @@ package_list:
   - usbutils
   - util-linux
   - vagrant
+  - vdirsyncer
   - vi
   - vibrancy-colors
   - viewnior
@@ -348,8 +348,6 @@ aur_list:
   - khard
   - neovim-gtk
   - postman-bin
-  - thinkfan-git
   - ttf-crosextra
   - urlview
-  - vdirsyncer-git
   - yamllint
