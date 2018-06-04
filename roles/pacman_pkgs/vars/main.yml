@@ -20,6 +20,7 @@ package_list:
   - avahi
   - aws-cli
   - b43-fwcutter
+  - banner
   - bash
   - bash-completion
   - bind-tools
@@ -36,6 +37,7 @@ package_list:
   - clipit
   - cmus
   - coreutils
+  - cowsay
   - cpupower
   - crda
   - cronie
@@ -56,12 +58,13 @@ package_list:
   - ecryptfs-utils
   - efibootmgr
   - epdfview
+  - evince
   - exfat-utils
   - f2fs-tools
   - fakeroot
-  - ff-theme-util
   - ffmpeg
   - ffmpegthumbnailer
+  - figlet
   - file
   - filesystem
   - findutils
@@ -100,6 +103,7 @@ package_list:
   - gvfs-smb
   - gzip
   - haveged
+  - hddtemp
   - hexchat
   - htop
   - i2c-tools
@@ -136,10 +140,9 @@ package_list:
   - linux-firmware
   - linux416
   - linux416-acpi_call
+  - linux416-headers
   - linux416-virtualbox-host-modules
   - linux416-zfs
-  - linux49
-  - linux49-virtualbox-host-modules
   - logrotate
   - lsb-release
   - lvm2
@@ -161,6 +164,7 @@ package_list:
   - manjaro-release
   - manjaro-settings-manager-notifier
   - manjaro-system
+  - markdown_previewer
   - mdadm
   - memtest86+
   - mesa-demos
@@ -190,6 +194,7 @@ package_list:
   - networkmanager-openvpn
   - networkmanager-pptp
   - networkmanager-vpnc
+  - newsboat
   - nfs-utils
   - ninja
   - nmap
@@ -250,7 +255,9 @@ package_list:
   - ruby
   - s-nail
   - samba
+  - sbt
   - sbxkb
+  - screen
   - screenfetch
   - seahorse
   - sed
@@ -269,6 +276,7 @@ package_list:
   - terraform
   - texinfo
   - the_silver_searcher
+  - tk
   - tlp
   - tmux
   - tpacpi-bat
@@ -283,6 +291,7 @@ package_list:
   - ttf-indic-otf
   - ttf-liberation
   - typescript
+  - ufw-extras
   - unzip
   - upower
   - usbutils
@@ -292,7 +301,6 @@ package_list:
   - vi
   - vibrancy-colors
   - viewnior
-  - vim
   - virt-install
   - virt-manager
   - virtualbox
@@ -326,16 +334,18 @@ package_list:
   - xfburn
   - xfce4-power-manager
   - xfsprogs
-  - xss-lock
   - xorg-server
   - xorg-twm
+  - xorg-xbacklight
   - xorg-xhost
   - xorg-xinit
   - xorg-xkill
   - xorg-xprop
+  - xss-lock
   - xterm
   - yaourt
   - yarn
+  - youtube-dl
   - zd1211-firmware
   - zip
   - zsh
@@ -348,6 +358,9 @@ aur_list:
   - khard
   - neovim-gtk
   - postman-bin
+  - signal-desktop-bin
   - ttf-crosextra
   - urlview
+  - vdirsyncer-git
   - yamllint
+  - zoom

@@ -1,7 +1,6 @@
 ---
 system_units:
     - tlp
-    - powertop
     - syncthing@jesse
     - offlineimap@jesse
     #- screenlocksleep@jesse
