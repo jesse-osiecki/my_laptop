@@ -2,9 +2,7 @@
 system_units:
     - tlp
     - syncthing@jesse
-    - offlineimap@jesse
+    #- offlineimap@jesse
     #- screenlocksleep@jesse
     #- dpmsonresume@jesse
     - smartd
-user_units:
-    - vdirsyncer.timer

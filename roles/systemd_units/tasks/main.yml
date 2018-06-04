@@ -30,6 +30,12 @@
 #    name: "{{ item }}"
 #  with_items: "{{ user_units }}"
 #
+- name: offlineimap
+  become: false
+  shell: systemctl enable offlineimap --user
+  args:
+    creates: ~/.config/systemd/user/default.target.wants/offlineimap.service
+
 - name: vdirsyncer.timer
   become: false
   shell: systemctl enable vdirsyncer.timer --user
