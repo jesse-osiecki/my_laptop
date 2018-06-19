@@ -19,12 +19,19 @@
   with_items: "{{ dotfiles | json_query('results[*].stat') }}"
   when: (item.isdir is defined and item.isdir) or (item.isreg is defined and item.isreg)
 
+- stat: path=~/.ssh/config
+  register: ssh_config_path
+  
+- debug: 
+    var: ssh_config_path
+
 - name: ssh symlink
   file: 
     src: '~/ssh'
     path: '~/.ssh' 
     state: link 
     force: true
+  when: ssh_config_path.stat.exists != true
 
 - name: setup dotfile symlinks
   file: 
@@ -38,11 +45,17 @@
 - name: offlineimap
   shell: offlineimap -o; echo ok
 
+- stat: path=~/Mail
+  register: mail_path
+
 - name: notmuch
   shell: notmuch new
+  when: mail_path.stat.exists
 
 - name: vdirsyncer discover
   shell: yes | vdirsyncer discover
+  when: mail_path.stat.exists
 
 - name: vdirsyncer sync
   shell: vdirsyncer sync
+  when: mail_path.stat.exists

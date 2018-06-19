@@ -140,11 +140,11 @@ package_list:
   - licenses
   - lightdm-gtk-greeter-settings
   - linux-firmware
-  - linux416
-  - linux416-acpi_call
-  - linux416-headers
-  - linux416-virtualbox-host-modules
-  - linux416-zfs
+  - linux417
+  - linux417-acpi_call
+  - linux417-headers
+  - linux417-virtualbox-host-modules
+  - linux417-zfs
   - logrotate
   - lsb-release
   - lvm2
@@ -208,7 +208,6 @@ package_list:
   - open-fuse-iso
   - openresolv
   - openssh
-  - openssh-askpass
   - os-prober
   - otf-fira-mono
   - p7zip
