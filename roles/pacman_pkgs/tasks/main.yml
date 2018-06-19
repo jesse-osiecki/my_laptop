@@ -20,4 +20,8 @@
     state: present
   become: yes
 
-
+- name: pip2
+  pip:
+    name: keyring
+    executable: pip2
+    extra_args: --user
