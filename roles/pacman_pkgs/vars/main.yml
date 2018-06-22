@@ -82,6 +82,7 @@ package_list:
   - gettext
   - gimp
   - gksu
+  - git
   - glances
   - glibc
   - gnome-alsamixer
@@ -139,9 +140,12 @@ package_list:
   - libvncserver
   - licenses
   - lightdm-gtk-greeter-settings
+  - lightdm-settings
+  - lightdm-slick-greeter
   - linux-firmware
   - linux417
   - linux417-acpi_call
+  - linux417-broadcom-wl
   - linux417-headers
   - linux417-virtualbox-host-modules
   - linux417-zfs
@@ -215,6 +219,7 @@ package_list:
   - pacman
   - pamac
   - patch
+  - patchutils
   - pavucontrol
   - pciutils
   - pcmanfm
@@ -269,7 +274,9 @@ package_list:
   - sed
   - shadow
   - smartmontools
+  - spectre-meltdown-checker
   - speedtest-cli
+  - subversion
   - sudo
   - syncthing
   - syncthing-gtk
@@ -315,9 +322,11 @@ package_list:
   - vulkan-intel
   - w3m
   - weechat
+  - wget
   - which
   - wine
   - winetricks
+  - whois
   - wireshark-cli
   - wireshark-gtk
   - wmutils
@@ -362,10 +371,12 @@ package_list:
 aur_list:
   - burpsuite
   - chef-dk
+  - i3ipc-python
   - leiningen
   - neovim-gtk
   - postman-bin
   - signal-desktop-bin
+  - py3status
   - spotify
   - ttf-crosextra
   - urlview
