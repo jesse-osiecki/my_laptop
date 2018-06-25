@@ -33,7 +33,7 @@ package_list:
   - btrfs-progs
   - bzip2
   - calibre
-  - cheese
+  - cantarell-fonts
   - chromium
   - clipit
   - cmus
@@ -81,7 +81,6 @@ package_list:
   - gconf
   - gettext
   - gimp
-  - gksu
   - git
   - glances
   - glibc
@@ -324,8 +323,6 @@ package_list:
   - weechat
   - wget
   - which
-  - wine
-  - winetricks
   - whois
   - wireshark-cli
   - wireshark-gtk

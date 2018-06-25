@@ -50,6 +50,4 @@
 
 - name: ssh-agent.service
   become: false
-  shell: systemctl enable ssh-agent.service --user
-  args:
-    creates: ~/.config/systemd/user/default.target.wants/ssh-agent.service
+  shell: systemctl disable ssh-agent.service --user
