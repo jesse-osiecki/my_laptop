@@ -1,0 +1,14 @@
+#!/bin/bash
+# /usr/bin/blurlock
+SCREENSHOT=$(mktemp --suffix .png)
+LOCKSCREEN=$(mktemp --suffix .png)
+# get path where the script is located to find the lock icon
+scriptpath=$(readlink -f -- "$0")
+scriptpath=${scriptpath%/*}
+scrot $SCREENSHOT
+convert $SCREENSHOT -scale 10% -scale 1000% $SCREENSHOT
+convert $SCREENSHOT $scriptpath/lock.png -gravity center -composite -matte $LOCKSCREEN
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+i3lock -i $LOCKSCREEN -u
+rm $SCREENSHOT $LOCKSCREEN
+exit 0
