@@ -34,9 +34,12 @@ package_list:
   - bzip2
   - calibre
   - cantarell-fonts
+  - cheese
   - chromium
   - clipit
+  - cmatrix
   - cmus
+  - cool-retro-term
   - coreutils
   - cowsay
   - cpupower
@@ -59,6 +62,7 @@ package_list:
   - ecryptfs-utils
   - efibootmgr
   - epdfview
+  - espeak
   - evince
   - exfat-utils
   - f2fs-tools
@@ -82,6 +86,7 @@ package_list:
   - gettext
   - gimp
   - git
+  - gksu-polkit
   - glances
   - glibc
   - gnome-alsamixer
@@ -90,6 +95,7 @@ package_list:
   - go
   - gparted
   - grep
+  - groff
   - grub
   - gst-libav
   - gst-plugins-bad
@@ -109,6 +115,8 @@ package_list:
   - hexchat
   - htop
   - i2c-tools
+  - i3-default-artwork
+  - i3lock
   - inetutils
   - intel-ucode
   - inxi
@@ -201,6 +209,7 @@ package_list:
   - networkmanager-vpnc
   - newsboat
   - nfs-utils
+  - nilfs-utils
   - ninja
   - nmap
   - nodejs
@@ -237,6 +246,7 @@ package_list:
   - psmisc
   - pulseaudio-bluetooth
   - python-httplib2
+  - python-keyring
   - python-neovim
   - python-netaddr
   - python-pip
@@ -256,6 +266,7 @@ package_list:
   - qt5ct
   - qutebrowser
   - ranger
+  - rdesktop
   - redshift
   - reiserfsprogs
   - remmina
@@ -281,6 +292,7 @@ package_list:
   - syncthing-gtk
   - sysfsutils
   - syslog-ng
+  - systemd
   - systemd-sysvcompat
   - tar
   - terminus-font
@@ -303,6 +315,7 @@ package_list:
   - ttf-indic-otf
   - ttf-liberation
   - typescript
+  - ufw
   - ufw-extras
   - unzip
   - upower
@@ -324,8 +337,11 @@ package_list:
   - wget
   - which
   - whois
+  - wine
+  - winetricks
   - wireshark-cli
   - wireshark-gtk
+  - wmctrl
   - wmutils
   - wpa_supplicant
   - x11-ssh-askpass
@@ -361,20 +377,23 @@ package_list:
   - yaourt
   - yarn
   - youtube-dl
-  - zd1211-firmware
   - zip
   - zsh
 
 aur_list:
+  - aview
   - burpsuite
   - chef-dk
   - i3ipc-python
   - leiningen
   - neovim-gtk
+  - pcmciautils
   - postman-bin
-  - signal-desktop-bin
   - py3status
+  - rig
+  - signal-desktop-bin
   - spotify
+  - spotify-adkiller-dns-block-git
   - ttf-crosextra
   - urlview
   - yamllint
