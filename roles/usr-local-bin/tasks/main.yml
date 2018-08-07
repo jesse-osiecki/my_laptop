@@ -5,13 +5,22 @@
     dest: "/usr/local/bin/"
     state: directory
 
-- name: /usr/local/bin Files
+- name: /usr/local/bin scripts
   become: true
   template:
     src: '{{ item.src }}'
     dest: /usr/local/bin/{{ item.path }}
     mode: '{{ item.mode }}'
     owner: "root" 
-  with_filetree: ./
+  with_filetree: ../templates/
   when: item.state == 'file'
 
+- name: /usr/local/bin Files
+  become: true
+  copy:
+    src: '{{ item.src }}'
+    dest: /usr/local/bin/{{ item.path }}
+    mode: '{{ item.mode }}'
+    owner: "root" 
+  with_filetree: ./
+  when: item.state == 'file'
