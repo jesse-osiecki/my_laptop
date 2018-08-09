@@ -47,15 +47,3 @@
 
 - stat: path=~/Mail
   register: mail_path
-
-- name: notmuch
-  shell: notmuch new
-  when: mail_path.stat.exists
-
-- name: vdirsyncer discover
-  shell: yes | vdirsyncer discover
-  when: mail_path.stat.exists
-
-- name: vdirsyncer sync
-  shell: vdirsyncer sync
-  when: mail_path.stat.exists
