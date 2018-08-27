@@ -5,6 +5,12 @@
     upgrade: yes
   become: yes
 
+- name: Build Essentials
+  pacman:
+    name: base-devel
+    state: present
+  become: yes
+
 - name: Install AUR packages
   aur: 
     name: "{{ item }}" 

@@ -42,8 +42,5 @@
   with_filetree: "~/dotfiles/"
   when: item.path | basename == item.path and item.path | basename != ".stfolder"
 
-- name: offlineimap
-  shell: offlineimap -o; echo ok
-
 - stat: path=~/Mail
   register: mail_path

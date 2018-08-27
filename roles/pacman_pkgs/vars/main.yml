@@ -229,7 +229,6 @@ package_list:
   - pavucontrol
   - pciutils
   - pcmanfm
-  - pcmciautils
   - pdfjs
   - perl
   - perl-anyevent-i3
@@ -385,7 +384,7 @@ aur_list:
   - i3ipc-python
   - leiningen
   - neovim-gtk
-  - pcmciautils
+#  - pcmciautils
   - postman-bin
   - py3status
   - rig
