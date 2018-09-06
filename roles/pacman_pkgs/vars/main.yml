@@ -16,6 +16,7 @@ package_list:
   - autoconf
   - autofs
   - automake
+  - autopep8
   - autossh
   - avahi
   - aws-cli
@@ -23,6 +24,7 @@ package_list:
   - banner
   - bash
   - bash-completion
+  - bat
   - bind-tools
   - binutils
   - bison
@@ -50,6 +52,7 @@ package_list:
   - dfc
   - dhclient
   - dhcpcd
+  - diff-so-fancy
   - diffutils
   - dmidecode
   - dmraid
@@ -74,7 +77,7 @@ package_list:
   - filesystem
   - findutils
   - firefox
-  - flac
+  - flake8
   - flashplugin
   - flex
   - freerdp
@@ -83,6 +86,7 @@ package_list:
   - gcc-libs
   - gcolor2
   - gconf
+  - gdb
   - gettext
   - gimp
   - git
@@ -179,6 +183,7 @@ package_list:
   - mdadm
   - memtest86+
   - mesa-demos
+  - mesa-vdpau
   - mhwd
   - mhwd-db
   - mkinitcpio-openswap
@@ -280,6 +285,7 @@ package_list:
   - seahorse
   - sed
   - shadow
+  - shellcheck
   - smartmontools
   - spectre-meltdown-checker
   - speedtest-cli
@@ -388,6 +394,8 @@ aur_list:
   - postman-bin
   - py3status
   - rig
+  - signal-desktop-bin
+  - spotify-adkiller-dns-block-git
   - ttf-crosextra
   - urlview
   - yamllint
