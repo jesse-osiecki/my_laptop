@@ -94,6 +94,8 @@ package_list:
   - glibc
   - gnome-alsamixer
   - gnome-keyring
+  - gnu-netcat
+  - gnutls28
   - go
   - gparted
   - grep
@@ -152,33 +154,15 @@ package_list:
   - lightdm-settings
   - lightdm-slick-greeter
   - linux-firmware
-  - linux417
-  - linux417-acpi_call
-  - linux417-broadcom-wl
-  - linux417-headers
-  - linux417-virtualbox-host-modules
-  - linux417-zfs
   - logrotate
   - lsb-release
   - lvm2
   - lxappearance
   - lxinput
   - m4
-  - maia-console
   - make
   - man-db
   - man-pages
-  - manjaro-alsa
-  - manjaro-browser-settings
-  - manjaro-firmware
-  - manjaro-hello
-  - manjaro-hotfixes
-  - manjaro-i3-settings
-  - manjaro-printer
-  - manjaro-pulse
-  - manjaro-release
-  - manjaro-settings-manager-notifier
-  - manjaro-system
   - markdown_previewer
   - mdadm
   - memtest86+
@@ -247,6 +231,7 @@ package_list:
   - procps-ng
   - psmisc
   - pulseaudio-bluetooth
+  - py3status
   - python-httplib2
   - python-keyring
   - python-neovim
@@ -286,6 +271,7 @@ package_list:
   - sed
   - shadow
   - shellcheck
+  - signify
   - smartmontools
   - spectre-meltdown-checker
   - speedtest-cli
@@ -298,6 +284,7 @@ package_list:
   - systemd
   - systemd-sysvcompat
   - tar
+  - telegram-desktop
   - terminus-font
   - termite
   - terraform
@@ -352,9 +339,6 @@ package_list:
   - xarchiver
   - xorg-xbacklight
   - xclip
-  - xcursor-chameleon-pearl
-  - xcursor-maia
-  - xdg-su
   - xdg-user-dirs
   - xdg-utils
   - xdotool
@@ -384,18 +368,14 @@ package_list:
   - zsh
 
 aur_list:
-  - aview
   - burpsuite
   - chef-dk
   - i3ipc-python
-  - leiningen
   - neovim-gtk
-#  - pcmciautils
   - postman-bin
-  - py3status
   - rig
   - signal-desktop-bin
-  - spotify-adkiller-dns-block-git
   - ttf-crosextra
   - urlview
+  - xcalib
   - yamllint

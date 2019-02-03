@@ -1,1 +1,7 @@
 **.retry
+.available_kernels
+.installed_kernels
+.inxi_info
+.running_kernel
+.vagrant/
+
