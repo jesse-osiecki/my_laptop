@@ -1,0 +1,4 @@
+ACTION=="remove", GOTO="mouse_end"
+KERNEL!="event*", GOTO="mouse_end"
+ATTRS{name}=="Kensington Expert Wireless TB Mouse", ENV{ID_INPUT_MOUSE}="1"
+ENV{ID_INPUT_MOUSE}=="", GOTO="mouse_end"

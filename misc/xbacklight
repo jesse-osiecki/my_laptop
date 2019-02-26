@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+file="/sys/class/backlight/intel_backlight/brightness"
+max_brightness=`cat /sys/class/backlight/intel_backlight/max_brightness`
+current=$(cat "$file")
+new="$current"
+
+#maths
+change=$(( $2 * max_brightness ))
+change=$(( change / 100 ))
+
+if [ "$1" = "-inc" ]
+then
+	new=$(( current + change ))
+fi
+if [ "$1" = "-dec" ]
+then
+	new=$(( current - change ))
+fi
+if [ "$1" = "-set" ]
+then
+	new=$(( change ))
+fi
+bc <<< "scale=4;$new/$max_brightness*100"
+echo "$new" | tee "$file" > /dev/null

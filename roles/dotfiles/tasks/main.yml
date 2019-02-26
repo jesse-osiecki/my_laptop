@@ -1,10 +1,4 @@
 ---
-- name: dependencies
-  pacman: 
-    name: python-jmespath
-    state: present
-  become: true
-
 - name: check for cruft
   stat:
     path: '~/{{ item.path | basename}}' 

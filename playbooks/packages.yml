@@ -2,4 +2,4 @@
 - name: Install all packages
   hosts: localhost
   roles:
-    - pacman_pkgs
+    - ../roles/pacman_pkgs

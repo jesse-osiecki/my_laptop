@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  roles:
+    - ../roles/pacman_pkgs
+    - ../roles/configs
+    - ../roles/dotfiles
+    - ../roles/systemd_units
+    - ../roles/etc
+    - ../roles/usr-local-bin
+    - ../roles/lid-fix
+    - ../roles/ufw

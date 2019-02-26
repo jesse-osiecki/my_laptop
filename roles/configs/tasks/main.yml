@@ -1,9 +1,4 @@
 ---
-- name: dependencies
-  pacman: 
-    name: python-jmespath
-    state: present
-  become: true
 
 # first ensure our target directory exists
 - name: Ensure target directory exists

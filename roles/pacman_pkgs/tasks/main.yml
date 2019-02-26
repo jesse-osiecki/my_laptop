@@ -11,6 +11,12 @@
     state: present
   become: yes
 
+- name: Install stuff
+  pacman:
+    name: "{{ package_list }}"
+    state: present
+  become: yes
+
 - name: Install AUR packages
   aur:
     name: "{{ item }}" 
@@ -18,13 +24,6 @@
   become: false
   with_flattened:
       - "{{ aur_list }}"
-
-
-- name: Install stuff
-  pacman:
-    name: "{{ package_list }}"
-    state: present
-  become: yes
 
 - name: pip2
   pip:
